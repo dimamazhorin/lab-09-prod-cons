@@ -1,5 +1,5 @@
 //
-// Created by hacker on 4/10/21.
+// Created by dima on 4/10/21.
 //
 
 #ifndef THREAD_POOL_H

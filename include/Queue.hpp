@@ -1,5 +1,5 @@
 //
-// Created by hacker on 4/11/21.
+// Created by dima on 4/11/21.
 //
 
 #ifndef TEMPLATE_QUEUE_HPP
