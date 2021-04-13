@@ -1,9 +1,7 @@
-//
-// Created by dima on 4/10/21.
-//
+// Copyright 2021 dima <dmitrymazhorinjr@gmail.com>
 
-#ifndef THREAD_POOL_H
-#define THREAD_POOL_H
+#ifndef THREAD_POOL_H_
+#define THREAD_POOL_H_
 
 #include <vector>
 #include <queue>
@@ -99,4 +97,4 @@ inline ThreadPool::~ThreadPool()
     worker.join();
 }
 
-#endif  // TEMPLATE_TREADPOOL_H
+#endif  // TEMPLATE_TREADPOOL_H_

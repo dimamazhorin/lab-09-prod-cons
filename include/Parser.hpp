@@ -1,12 +1,11 @@
-//
-// Created by dima on 4/11/21.
-//
+// Copyright 2021 dima <dmitrymazhorinjr@gmail.com>
 
-#ifndef TEMPLATE_PARSER_HPP
-#define TEMPLATE_PARSER_HPP
+#ifndef INCLUDE_PARSER_HPP_
+#define INCLUDE_PARSER_HPP_
 #include <iostream>
 #include "Downloader.hpp"
 #include "Queue.hpp"
+#include <string>
 
 struct URL {
   std::string url;
@@ -14,10 +13,10 @@ struct URL {
 };
 class Parser {
  public:
-  explicit Parser() = delete;
+  Parser() = delete;
   static void parse();
   inline static Queue<URL> queue_url;
   inline static Queue<std::string> queue_writer;
 };
 
-#endif  // TEMPLATE_PARSER_HPP
+#endif  // INCLUDE_PARSER_HPP_

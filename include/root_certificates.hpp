@@ -1,9 +1,6 @@
-//
-// Created by dima on 4/10/21.
-//
-
-#ifndef TEMPLATE_ROOT_CERTIFICATES_HPP
-#define TEMPLATE_ROOT_CERTIFICATES_HPP
+// Copyright 2021 dima <dmitrymazhorinjr@gmail.com>
+#ifndef TEMPLATE_ROOT_CERTIFICATES_HPP_
+#define TEMPLATE_ROOT_CERTIFICATES_HPP_
 #include <boost/asio/ssl.hpp>
 #include <string>
 
@@ -102,8 +99,7 @@ load_root_certificates(ssl::context& ctx, boost::system::error_code& ec)
 
   ctx.add_certificate_authority(
       boost::asio::buffer(cert.data(), cert.size()), ec);
-  if(ec)
-    return;
+  if(ec) return;
 }
 
 } // detail
@@ -126,4 +122,4 @@ load_root_certificates(ssl::context& ctx)
   if(ec)
     throw boost::system::system_error{ec};
 }
-#endif  // TEMPLATE_ROOT_CERTIFICATES_HPP
+#endif  // TEMPLATE_ROOT_CERTIFICATES_HPP_

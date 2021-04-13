@@ -1,9 +1,7 @@
-//
-// Created by dima on 4/11/21.
-//
+// Copyright 2021 dima <dmitrymazhorinjr@gmail.com>
 
-#ifndef TEMPLATE_QUEUE_HPP
-#define TEMPLATE_QUEUE_HPP
+#ifndef INCLUDE_QUEUE_HPP_
+#define INCLUDE_QUEUE_HPP_
 
 #include <iostream>
 #include <mutex>
@@ -41,4 +39,4 @@ class Queue {
   std::queue<T> _queue;
 };
 
-#endif  // TEMPLATE_QUEUE_HPP
+#endif  // INCLUDE_QUEUE_HPP_

@@ -1,3 +1,4 @@
+// Copyright 2021 dima <dmitrymazhorinjr@gmail.com>
 #include "ThreadPool.h" //
 #include "Downloader.hpp"
 #include "Parser.hpp"

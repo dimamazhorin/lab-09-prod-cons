@@ -1,6 +1,4 @@
-//
-// Created by dima on 4/11/21.
-//
+// Copyright 2021 dima <dmitrymazhorinjr@gmail.com>
 
 #include "Parser.hpp"
 #include <string>
