@@ -25,4 +25,4 @@ class Downloader {
   static void DownloadHttps(Page&& _page);
 };
 
-#endif  // TEMPLATE_DOWNLOADER_HPP_
+#endif  // INCLUDE_DOWNLOADER_HPP_

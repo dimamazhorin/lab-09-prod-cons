@@ -1,6 +1,4 @@
-//
-// Created by hacker on 4/11/21.
-//
+// Copyright 2021 dima <dmitrymazhorinjr@gmail.com>
 #include <regex>
 #include "Queue.hpp"
 #include "ThreadPool.h"

@@ -1,6 +1,6 @@
 // Copyright 2021 dima <dmitrymazhorinjr@gmail.com>
-#ifndef TEMPLATE_ROOT_CERTIFICATES_HPP_
-#define TEMPLATE_ROOT_CERTIFICATES_HPP_
+#ifndef INCLUDE_ROOT_CERTIFICATES_HPP_
+#define INCLUDE_ROOT_CERTIFICATES_HPP_
 #include <boost/asio/ssl.hpp>
 #include <string>
 
@@ -95,11 +95,11 @@ load_root_certificates(ssl::context& ctx, boost::system::error_code& ec)
       "9pWXTO9JrYMML7d+XRSZA1n3856OqZDX4403+9FnXCvfcLZLLKTBvwwFgEFGpzjK\n"
       "UEVbkhd5qstF6qWK\n"
       "-----END CERTIFICATE-----\n";
-  ;
+
 
   ctx.add_certificate_authority(
       boost::asio::buffer(cert.data(), cert.size()), ec);
-  if(ec) return;
+   if (ec) return;
 }
 
 } // detail
@@ -119,7 +119,7 @@ load_root_certificates(ssl::context& ctx)
 {
   boost::system::error_code ec;
   detail::load_root_certificates(ctx, ec);
-  if(ec)
+  if (ec)
     throw boost::system::system_error{ec};
 }
-#endif  // TEMPLATE_ROOT_CERTIFICATES_HPP_
+#endif  // INCLUDE_ROOT_CERTIFICATES_HPP_
