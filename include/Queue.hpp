@@ -8,11 +8,10 @@
 #include <queue>
 #include <string>
 
-
 template <typename T>
 class Queue {
  public:
-  Queue():_counter(0){}
+  Queue() : _counter(0) {}
   void push(T&& obj) {
     std::lock_guard<std::mutex> lock(_mut);
     _queue.push(obj);
@@ -34,6 +33,7 @@ class Queue {
     return _queue.empty();
   }
   int _counter;
+
  private:
   std::mutex _mut;
   std::queue<T> _queue;
